@@ -1,0 +1,53 @@
+body {
+    background: #fff;
+}
+
+#nawigacja {
+    text-align: center;
+    font-size: 150%;
+    background-color: #f1f1f1;
+}
+
+#baner {
+
+}
+
+#item {
+
+}
+
+#shop_space {
+    text-align: center;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: #5bd57b;
+    text-decoration: none;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+a:visited {
+    color: black;
+}
+
+a:visited:hover {
+    color: #5bd57b;
+    text-decoration: none;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.miniature {
+
+}
+
+.miniature:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+#nawigacja:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
