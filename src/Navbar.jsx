@@ -26,7 +26,7 @@ class Navbar extends Component {
                     </div>
                     <div class="col-3">
                         <a href="produkty.html">
-                            <div>Kontakt</div>
+                            <div>Kontakt <i class="fas fa-phone"></i></div>
                         </a>
                     </div>
                     <div class="col-3">
