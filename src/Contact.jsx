@@ -24,11 +24,13 @@ class Banner extends Component {
                 </div>
                 <div class="row" id="contact">
                     <div class="col-12">
-                        <h1>Kontakt</h1>
-                        <h2>Telefon: {this.state.phone}</h2>
-                        <h2>Telefon: {this.state.email}</h2>
-                        <h2>Adres: {this.state.adres.map(el => (el.ulica + " " + el.miasto))}</h2>
-                        <h3>{this.props.promotionTime}</h3>
+                        <center><h1 class="display-3">Kontakt</h1></center>
+                        <br />
+                        <div>
+                            <h2><span class="badge badge-info">Telefon <i class="fas fa-phone"></i></span> {this.state.phone}</h2>
+                            <h2><span class="badge badge-info">Adres e-mail <i class="fas fa-mail-bulk"></i></span> {this.state.email}</h2>
+                            <h2><span class="badge badge-info">Siedziba <i class="fas fa-search-location"></i></span> {this.state.adres.map(el => (el.ulica + " " + el.miasto))}</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="row">

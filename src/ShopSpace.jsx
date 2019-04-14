@@ -137,17 +137,17 @@ class ShopSpace extends Component {
                 <div class="row" id="shop">
                     <div class="col-4">
                         <center>
-                            <ProductMiniature ref={this.productMiniatureElement10} name="Wiertarka BOSCH" image="https://5.allegroimg.com/s512/0332ad/95894beb4307ab96f1f8041758a5/WIERTARKA-UDAROWA-BOSCH-EASYIMPACT-500-550-W" description="Super pila mechaniczna!" target="https://getbootstrap.com/docs/4.0/utilities/borders/" price="1200" promotionTime={this.props.promotionTime} promotionValue={this.props.promotionValue} />
+                            <ProductMiniature ref={this.productMiniatureElement10} name="Konewka 'Czerwony Kapturek'" image="https://www.ikea.com/pl/pl/images/products/socker-konewka-czerwony__0681598_PE720195_S4.JPG" description="Pij, snij, podlewaj!" target="https://getbootstrap.com/docs/4.0/utilities/borders/" price="1200" promotionTime={this.props.promotionTime} promotionValue={this.props.promotionValue} />
                         </center>
                     </div>
                     <div class="col-4">
                         <center>
-                            <ProductMiniature ref={this.productMiniatureElement11} name="Wiertarka BOSCH" image="https://5.allegroimg.com/s512/0332ad/95894beb4307ab96f1f8041758a5/WIERTARKA-UDAROWA-BOSCH-EASYIMPACT-500-550-W" description="Super pila mechaniczna!" target="https://getbootstrap.com/docs/4.0/utilities/borders/" price="1200" promotionTime={this.props.promotionTime} promotionValue={this.props.promotionValue} />
+                            <ProductMiniature ref={this.productMiniatureElement11} name="Grabie Ogrodowe" image="https://uprawiaj.pl/userdata/gfx/23433448af9cbc7c6d19a6a76b139988.jpg" description="No to nagrabimy..." target="https://getbootstrap.com/docs/4.0/utilities/borders/" price="1200" promotionTime={this.props.promotionTime} promotionValue={this.props.promotionValue} />
                         </center>
                     </div>
                     <div class="col-4">
                         <center>
-                            <ProductMiniature ref={this.productMiniatureElement12} name="Wiertarka BOSCH" image="https://5.allegroimg.com/s512/0332ad/95894beb4307ab96f1f8041758a5/WIERTARKA-UDAROWA-BOSCH-EASYIMPACT-500-550-W" description="Super pila mechaniczna!" target="https://getbootstrap.com/docs/4.0/utilities/borders/" price="1200" promotionTime={this.props.promotionTime} promotionValue={this.props.promotionValue} />
+                            <ProductMiniature ref={this.productMiniatureElement12} name="Pila mechaniczna McCullock" image="https://apollo-ireland.akamaized.net/v1/files/xe87njk1h07b1-PL/image;s=644x461" description="Tnieeeeeeemy, tylko co???" target="https://getbootstrap.com/docs/4.0/utilities/borders/" price="1200" promotionTime={this.props.promotionTime} promotionValue={this.props.promotionValue} />
                         </center>
                     </div>
                 </div>

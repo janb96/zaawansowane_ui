@@ -18,14 +18,16 @@ class PreparePromotion extends Component {
                     <div class="col-4">
                         <br />
                         <br />
-                        <center><h1>Dodaj promocje</h1></center>
+                        <center><h1 class="display-3">Dodaj promocje</h1></center>
                         <br/>
                         <div className="edit-Event">
                             <form onSubmit={this.props.onClick}>
                                 <div class="form-group">
+                                    <center><h1>Czas trwania promocji</h1></center>
                                     <input type="number" class="form-control" id="czasTrwania" placeholder="Czas trwania promocji (w s)" />
                                 </div>
                                 <div class="form-group">
+                                    <center><h1>Wysokosc rabatu</h1></center>
                                     <select class="form-control" id="wysokoscRabatu">
                                         <option value="5">5%</option>
                                         <option value="10">10%</option>
@@ -37,7 +39,7 @@ class PreparePromotion extends Component {
                                 </div>
                                 <center>
                                     <div class="form-group">
-                                        <input type="submit" class="form-control" value="Dodaj" onClick={this.props.handler} />
+                                        <button type="submit" class="form-control btn btn-success" value="Dodaj" onClick={this.props.handler}>Rozpocznij promocje</button>
                                     </div>
                                 </center>
                             </form>
