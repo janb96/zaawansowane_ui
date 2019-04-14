@@ -6,8 +6,25 @@ class Navbar extends Component {
     constructor() {
         super();
         this.state = {
-             
+            date: new Date()
         };
+    }
+
+    componentDidMount() {
+        this.timerID = setInterval(
+            () => this.tick(),
+            1000
+        );
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timerID);
+    }
+
+    tick() {
+        this.setState({
+            date: new Date()
+        });
     }
 
     render() {
@@ -25,13 +42,13 @@ class Navbar extends Component {
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="produkty.html">
+                        <a href="kontakt.html">
                             <div>Kontakt <i class="fas fa-phone"></i></div>
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="produkty.html">
-                            <div ><i class="fab fa-facebook"></i></div>
+                        <a href="https://www.facebook.com/">
+                            <div ><i class="fab fa-facebook"> {this.state.date.toLocaleTimeString()}</i></div>
                         </a>
                     </div>
                 </div>
