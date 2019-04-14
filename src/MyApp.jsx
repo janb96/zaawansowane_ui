@@ -15,15 +15,14 @@ class MyApp extends Component {
             promotionValue: 0,
         };
         this.dodajPromocje = this.dodajPromocje.bind(this);
+        this.shopSpaceElement = React.createRef();
     }
 
     dodajPromocje(evt) {
         evt.preventDefault();
-        console.log("DZIALAM");
-        const czasTrwania = evt.target.czasTrwania.value;
-        const wysokoscRabatu = evt.target.wysokoscRabatu.value;
-        this.setState({ promotionTime: czasTrwania });
-        this.setState({ promotionValue: wysokoscRabatu });
+        this.setState({ promotionTime: evt.target.czasTrwania.value });
+        this.setState({ promotionValue: evt.target.wysokoscRabatu.value });
+        this.shopSpaceElement.current.changePromotion(evt.target.czasTrwania.value, evt.target.wysokoscRabatu.value);
     }
 
     render() {
@@ -36,7 +35,7 @@ class MyApp extends Component {
                 <div class="row">
                     <hr align="left" width="100%"/>
                 </div>
-                <ShopSpace promotionTime={this.state.promotionTime} promotionValue={this.state.promotionValue} />
+                <ShopSpace ref={this.shopSpaceElement} promotionTime={this.state.promotionTime} promotionValue={this.state.promotionValue} />
                 <Contact />
                 <PreparePromotion onClick={(evt) => this.dodajPromocje(evt)} />
             </div>

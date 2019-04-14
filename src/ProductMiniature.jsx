@@ -26,6 +26,17 @@ class ProductMiniature extends Component {
         }
     }
 
+    changePromotion = (promotion1, promotion2) => {
+        this.setState({
+            date: promotion1,
+            promotion: promotion2,
+        });
+        this.setState((state) => {
+            return { price: this.state.price - this.state.price * promotion2 / 100 };
+        });
+        this.setState({ isActive: true });
+    }
+
     componentWillUnmount() {
         clearInterval(this.timerID);
     }
@@ -58,7 +69,6 @@ class ProductMiniature extends Component {
                                 <Promotion isActive={this.state.isActive} time={this.state.date} />
                             </p>
                             <p>{this.props.description}</p>
-                            <p>{this.props.promotionValue}</p>
                         </div>
                     </div>
                 </a>

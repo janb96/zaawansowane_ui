@@ -31,6 +31,9 @@ class Banner extends Component {
                         <h3>{this.props.promotionTime}</h3>
                     </div>
                 </div>
+                <div class="row">
+                    <hr align="left" width="100%" />
+                </div>
             </div>
         );
     }
